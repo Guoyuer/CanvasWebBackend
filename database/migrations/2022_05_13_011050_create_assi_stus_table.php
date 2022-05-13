@@ -14,7 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('assi_stus', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('student_id');
+            $table->integer('course_id');
+            $table->integer('assignment_id');
+            $table->text('answer');
+            $table->double('grade');
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@ class AdminController extends Controller
             'teacher_id' => request('teacher_id'),
         ]);
     }
-
+//ORM: object relation mapping
     public function updateCourse()
     {
         $course = Course::find(request('course_id'));

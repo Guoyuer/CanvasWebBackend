@@ -49,6 +49,8 @@ Content-Type: application/json
     "capacity" : 10,
     "teacher_id" : 3
 }
+
+
 ###
 #add a student to a course
 POST http://localhost:8000/api/admin/stu2course HTTP/1.1

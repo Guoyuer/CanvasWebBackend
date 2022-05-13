@@ -14,7 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('stu_courses', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('student_id');
+            $table->integer('course_id');
             $table->timestamps();
         });
     }
